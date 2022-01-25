@@ -9,6 +9,7 @@ function anti($text){
 $nama_pengirim = anti($_POST["nama_pengirim"]);
 $komen = anti($_POST["komen"]);
 $komen_id = anti($_POST["komentar_id"]);
+$user_id = anti($_POST["user_id"]);
  
 $query = "INSERT INTO tbl_komentar (parent_komentar_id, komentar, nama_pengirim) VALUES (?, ?, ?)";
 $dewan1 = $db1->prepare($query);
